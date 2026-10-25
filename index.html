@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Greenhouse Valley – Dein kleines Stück Natur</title>
+  <meta name="description" content="Entdecke Greenhouse Valley: Pflanze, pflege und ernte in deinen Gewächshäusern und erkunde ein Tal voller Seen, Wälder und neuer Möglichkeiten.">
+  <meta name="theme-color" content="#243e32">
+  <link rel="icon" href="assets/leaf.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body id="top">
+<a class="skip" href="#main">Zum Inhalt</a>
+<header class="header">
+  <a class="brand" href="#top"><img src="assets/leaf.svg" width="35" height="35" alt=""><span>Greenhouse <b>Valley</b></span></a>
+  <nav aria-label="Hauptnavigation"><a href="#spiel">Das Spiel</a><a href="#entdecken">Das Tal entdecken</a><a href="#fragen">Fragen & Antworten</a></nav>
+  <a class="header-link" href="#entwicklung"><span class="dot"></span> In Entwicklung</a>
+</header>
+<main id="main">
+  <section class="hero">
+    <picture class="hero-art"><source media="(max-width: 650px)" srcset="assets/loading-farm-portrait-v1.webp"><img src="assets/loading-farm-landscape-v1.webp" alt="Ladebildschirm von Greenhouse Valley mit Bauernhaus, Pflanzen und Gewächshaus vor einer weiten Tallandschaft" fetchpriority="high"></picture>
+    <div class="hero-shade"></div>
+    <div class="hero-copy">
+      <p class="eyebrow">WILLKOMMEN IN GREENHOUSE VALLEY</p>
+      <h1>Ein kleiner Samen.<br>Ein ganzes Tal<br><em>voller Möglichkeiten.</em></h1>
+      <p>Pflanze, pflege und ernte. Lass deine Gewächshäuser wachsen und entdecke, was hinter der nächsten Brücke auf dich wartet.</p>
+      <a class="button cream" href="#entdecken">Entdecke das Tal <span aria-hidden="true">↗</span></a>
+    </div>
+    <div class="hero-bottom"><span>DEIN KLEINES STÜCK NATUR</span><span>Spiel in Entwicklung</span><a href="#spiel" aria-label="Weiter zum Spielüberblick">↓</a></div>
+  </section>
+  <section class="intro section" id="spiel">
+    <div><p class="eyebrow">WACHSEN. ENTDECKEN. ANKOMMEN.</p><h2>Hier beginnt<br><em>etwas Schönes.</em></h2></div>
+    <div class="intro-copy"><p class="lead">Dein erstes Gewächshaus ist erst der Anfang.</p><p>In Greenhouse Valley wird aus einem kleinen Anfang nach und nach dein eigener grüner Rückzugsort. Wähle Saatgut, versorge deine Pflanzen und sammle deine Ernte. Mit jedem neuen Gebiet öffnet sich ein weiteres Stück der Welt.</p><p>Von blühenden Gärten bis zu stillen Seen: Jede Region bringt ihre eigene Atmosphäre und neue Pflanzen mit.</p></div>
+  </section>
+  <section class="loop section" aria-label="Das erwartet dich im Spiel">
+    <article><span class="step">01 / PFLANZEN</span><h3>Aus klein wird grün.</h3><p>Entscheide, was in deinen Gewächshäusern wächst. Vom ersten Radieschen bis zu neuen Sorten aus fernen Winkeln des Tals.</p></article>
+    <article><span class="step">02 / PFLEGEN</span><h3>Ein bisschen Zuwendung.</h3><p>Bewässere deine Pflanzen, begleite ihr Wachstum und erweitere deine Gewächshäuser um hilfreiche Automatisierung.</p></article>
+    <article><span class="step">03 / ENTDECKEN</span><h3>Hinter der nächsten Brücke.</h3><p>Verkaufe deine Ernte, erschließe neue Regionen und finde weitere Plätze für deine Gewächshäuser.</p></article>
+  </section>
+  <section class="discover" id="entdecken">
+    <div class="section section-heading"><div><p class="eyebrow">EINE WELT, DIE MIT DIR WÄCHST</p><h2>Wohin zieht<br><em>es dich heute?</em></h2></div><p>Vom ersten Gewächshaus über die Wassermühle bis zur Schleuse: Entdecke drei Orte aus Greenhouse Valley.</p></div>
+    <div class="explorer section">
+      <div class="region-photo"><button class="enlarge" id="enlarge" aria-label="Spielbild vergrößern"><img id="region-image" src="assets/greenhouse-starter.webp" width="1920" height="1080" alt="Startergebiet mit Bauernhaus und bepflanzten Gewächshäusern in Greenhouse Valley" loading="lazy"><span>Bild erkunden ↗</span></button><span class="photo-note">SPIELAUFNAHMEN AUS DER ENTWICKLUNG</span></div>
+      <div class="region-content">
+        <div class="region-tabs" role="group" aria-label="Region auswählen"><button class="active" data-region="starter" aria-pressed="true">Startergebiet</button><button data-region="mill" aria-pressed="false">Die Mühle</button><button data-region="sluice" aria-pressed="false">Die Schleuse</button></div>
+        <div aria-live="polite" aria-atomic="true"><p class="region-number" id="region-number">01 / STARTERGEBIET</p><h3 id="region-title">Dein Anfang<br>im Grünen.</h3><p id="region-description">Rund um das Bauernhaus beginnt dein Leben im Tal. Pflanze deine ersten Samen, pflege die Beete und ernte, was in deinen Gewächshäusern heranwächst.</p><div class="crop"><span>HIER ENTDECKST DU</span><p id="region-crops">Radieschen & Salat</p></div></div>
+        <a class="text-link" href="#welt">Und noch mehr dahinter <span aria-hidden="true">↓</span></a>
+      </div>
+    </div>
+  </section>
+  <section class="world section" id="welt">
+    <div><p class="eyebrow">VOM ERSTEN GARTEN BIS ZUM UNBEKANNTEN</p><h2>Das Tal hört<br><em>hier nicht auf.</em></h2><p>Vom vertrauten Grün bis zu frostigen Höhen und geheimnisvollen Landschaften: Entdecke nach und nach neue Regionen und ihre Pflanzen.</p></div>
+    <ol class="places">
+      <li><span>01</span><div><h3>Blossom Gardens</h3><p>Dein Anfang im Grünen · Radieschen & Salat</p></div></li>
+      <li><span>02</span><div><h3>Sunlit Hills & Woodland Valley</h3><p>Sonnige Hügel und Wald · Sonnenblumen, Tomaten & mehr</p></div></li>
+      <li><span>03</span><div><h3>Mountain Highlands & Frost Valley</h3><p>Hoch hinaus · Blaubeeren, Cranberrys & Winterkohl</p></div></li>
+      <li><span>04</span><div><h3>Swampland & Orchard Hills</h3><p>Wasser und Obstgärten · Reis, Taro, Äpfel & Birnen</p></div></li>
+      <li><span>05</span><div><h3>Mystical Valley</h3><p>Ein geheimnisvoller Winkel · Moonflower & Glowroot</p></div></li>
+    </ol>
+  </section>
+  <section class="development" id="entwicklung"><div class="section"><span class="status"><span class="dot"></span> IN ENTWICKLUNG</span><h2>Auch dieses Tal<br><em>braucht Zeit zum Wachsen.</em></h2><p>Wir arbeiten an Greenhouse Valley. Hier bekommst du schon jetzt einen Einblick in die Welt, die entsteht. Informationen zur Veröffentlichung und Download-Links folgen, sobald es so weit ist.</p><span class="signature">Ein Spiel von <b>Copperwing Games</b></span></div></section>
+  <section class="faq section" id="fragen"><div><p class="eyebrow">GUT ZU WISSEN</p><h2>Noch neugierig?</h2></div><div><details><summary>Was ist Greenhouse Valley?</summary><p>Ein Spiel rund um Gewächshäuser, Pflanzen und das Erkunden einer zusammenhängenden Welt. Du pflanzt Saatgut, kümmerst dich um deine Ernte und erschließt nach und nach weitere Regionen.</p></details><details><summary>Kann ich das Spiel schon herunterladen?</summary><p>Greenhouse Valley befindet sich in Entwicklung. Einen öffentlichen Download und einen bestätigten Veröffentlichungstermin gibt es derzeit noch nicht. Sobald sie verfügbar sind, findest du die Informationen hier.</p></details><details><summary>Was zeigen die Bilder auf dieser Seite?</summary><p>Das Titelbild stammt aus dem Ladebildschirm des Spiels. Die drei Regionsbilder zeigen Spielaufnahmen mit Oberfläche und Gewächshäusern: das Startergebiet, die Mühle und die Schleuse. Alle Bilder stammen aus der Entwicklung; die Gestaltung kann sich noch ändern.</p></details><details><summary>Was gibt es zu entdecken?</summary><p>Blühende Gärten, Seen, Wälder, Wiesen, Weinberge, Obstgärten und weitere Regionen. Neue Gebiete bringen neue Pflanzensorten, weitere Plätze für deine Gewächshäuser und neue Spielmechaniken mit. So gibt es mit jeder freigeschalteten Region neue Möglichkeiten zu entdecken.</p></details></div></section>
+</main>
+<footer class="section"><a class="brand" href="#top"><img src="assets/leaf.svg" width="32" height="32" alt=""><span>Greenhouse <b>Valley</b></span></a><span>© 2026 Copperwing Games</span><a href="#top">Zurück nach oben ↑</a><nav class="legal-links" aria-label="Rechtliches und Spielkonto"><a href="https://copperwinggames.com/impressum/#de">Impressum</a><a href="https://copperwinggames.com/greenhouse-valley/privacy/#de">Datenschutzerklärung</a><a href="https://copperwinggames.com/greenhouse-valley/delete-account/#de">Spielkonto löschen</a></nav></footer>
+<dialog id="lightbox" aria-label="Spielaufnahme"><button class="close" aria-label="Spielaufnahme schließen">Schließen ×</button><img alt=""><p>Spielaufnahme · Spiel in Entwicklung</p></dialog>
+</body>
+</html>
