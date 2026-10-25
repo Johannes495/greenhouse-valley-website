@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Greenhouse Valley – Tu pequeño rincón de naturaleza</title>
+  <meta name="description" content="Descubre Greenhouse Valley: planta, cuida y cosecha en tus invernaderos y explora un valle de lagos, bosques y nuevas posibilidades.">
+  <meta name="theme-color" content="#243e32">
+  <link rel="icon" href="assets/leaf.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+<link rel="canonical" href="https://greenhousevalley.net/es.html">
+<link rel="alternate" hreflang="en-US" href="https://greenhousevalley.net/">
+<link rel="alternate" hreflang="de-DE" href="https://greenhousevalley.net/de.html">
+<link rel="alternate" hreflang="es-ES" href="https://greenhousevalley.net/es.html">
+<link rel="alternate" hreflang="fr-FR" href="https://greenhousevalley.net/fr.html">
+<link rel="alternate" hreflang="pt-BR" href="https://greenhousevalley.net/pt-BR.html">
+<link rel="alternate" hreflang="ja-JP" href="https://greenhousevalley.net/ja.html">
+<link rel="alternate" hreflang="x-default" href="https://greenhousevalley.net/">
+</head>
+<body id="top">
+<a class="skip" href="#main">Saltar al contenido</a>
+<header class="header">
+  <a class="brand" href="#top"><img src="assets/leaf.svg" width="35" height="35" alt=""><span>Greenhouse <b>Valley</b></span></a>
+  <nav aria-label="Navegación principal"><a href="#spiel">El juego</a><a href="#entdecken">Explora el valle</a><a href="#fragen">Preguntas y respuestas</a></nav>
+  <a class="header-link" href="#entwicklung"><span class="dot"></span> En desarrollo</a>
+<details class="language-picker"><summary>Idioma · Español</summary><nav aria-label="Idioma"><a href="index.html" lang="en-US" hreflang="en-US">English</a><a href="de.html" lang="de-DE" hreflang="de-DE">Deutsch</a><a href="es.html" lang="es-ES" hreflang="es-ES" aria-current="page">Español</a><a href="fr.html" lang="fr-FR" hreflang="fr-FR">Français</a><a href="pt-BR.html" lang="pt-BR" hreflang="pt-BR">Português (Brasil)</a><a href="ja.html" lang="ja-JP" hreflang="ja-JP">日本語</a></nav></details></header>
+<main id="main">
+  <section class="hero">
+    <picture class="hero-art"><source media="(max-width: 650px)" srcset="assets/loading-farm-portrait-v1.webp"><img src="assets/loading-farm-landscape-v1.webp" alt="Granja, plantas e invernadero con vistas a un amplio valle" fetchpriority="high"></picture>
+    <div class="hero-shade"></div>
+    <div class="hero-copy">
+      <p class="eyebrow">TE DAMOS LA BIENVENIDA A GREENHOUSE VALLEY</p>
+      <h1>Una pequeña semilla.<br>Todo un valle<br><em>de posibilidades.</em></h1>
+      <p>Planta, cuida y cosecha. Amplía tus invernaderos y descubre lo que te espera al otro lado del próximo puente.</p>
+      <a class="button cream" href="#entdecken">Explora el valle <span aria-hidden="true">↗</span></a>
+    </div>
+    <div class="hero-bottom"><span>TU PEQUEÑO RINCÓN DE NATURALEZA</span><span>Juego en desarrollo</span><a href="#spiel" aria-label="Ir a la presentación del juego">↓</a></div>
+  </section>
+  <section class="intro section" id="spiel">
+    <div><p class="eyebrow">CULTIVA. EXPLORA. SIÉNTETE EN CASA.</p><h2>Aquí empieza<br><em>algo hermoso.</em></h2></div>
+    <div class="intro-copy"><p class="lead">Tu primer invernadero es solo el comienzo.</p><p>En Greenhouse Valley, un pequeño comienzo se convierte poco a poco en tu propio refugio verde. Elige semillas, cuida tus plantas y recoge tu cosecha. Cada nueva región abre otra parte del mundo.</p><p>Desde jardines en flor hasta lagos tranquilos, cada región tiene su propio ambiente y nuevas plantas.</p></div>
+  </section>
+  <section class="loop section" aria-label="Qué te espera en el juego">
+    <article><span class="step">01 / PLANTA</span><h3>Pequeños comienzos, grandes brotes.</h3><p>Decide qué cultivar en tus invernaderos, desde tus primeros rábanos hasta nuevas variedades de rincones lejanos del valle.</p></article>
+    <article><span class="step">02 / CUIDA</span><h3>Un poco de cariño.</h3><p>Riega tus plantas, acompaña su crecimiento y equipa tus invernaderos con útiles sistemas automáticos.</p></article>
+    <article><span class="step">03 / EXPLORA</span><h3>Más allá del próximo puente.</h3><p>Vende tu cosecha, desbloquea nuevas regiones y encuentra más lugares para tus invernaderos.</p></article>
+  </section>
+  <section class="discover" id="entdecken">
+    <div class="section section-heading"><div><p class="eyebrow">UN MUNDO QUE CRECE CONTIGO</p><h2>¿Adónde te lleva<br><em>el camino hoy?</em></h2></div><p>Desde tu primer invernadero hasta el molino de agua y la esclusa: descubre tres lugares de Greenhouse Valley.</p></div>
+    <div class="explorer section">
+      <div class="region-photo"><button class="enlarge" id="enlarge" aria-label="Ampliar imagen del juego"><img id="region-image" src="assets/greenhouse-starter.webp" width="1920" height="1080" alt="Zona inicial con granja e invernaderos cultivados" loading="lazy"><span>Explorar imagen ↗</span></button><span class="photo-note">IMÁGENES DEL JUEGO EN DESARROLLO</span></div>
+      <div class="region-content">
+        <div class="region-tabs" role="group" aria-label="Elegir una región"><button class="active" data-region="starter" aria-pressed="true">Zona inicial</button><button data-region="mill" aria-pressed="false">El molino</button><button data-region="sluice" aria-pressed="false">La esclusa</button></div>
+        <div aria-live="polite" aria-atomic="true"><p class="region-number" id="region-number">01 / ZONA INICIAL</p><h3 id="region-title">Tu comienzo<br>entre el verde.</h3><p id="region-description">Tu vida en el valle comienza junto a la granja. Planta tus primeras semillas, cuida los bancales y recoge lo que crece en tus invernaderos.</p><div class="crop"><span>AQUÍ DESCUBRIRÁS</span><p id="region-crops">Rábanos y lechugas</p></div></div>
+        <a class="text-link" href="#welt">Y mucho más por descubrir <span aria-hidden="true">↓</span></a>
+      </div>
+    </div>
+  </section>
+  <section class="world section" id="welt">
+    <div><p class="eyebrow">DEL PRIMER JARDÍN A LO DESCONOCIDO</p><h2>El valle no<br><em>termina aquí.</em></h2><p>Desde paisajes verdes hasta cumbres heladas y lugares misteriosos: descubre poco a poco nuevas regiones y sus plantas.</p></div>
+    <ol class="places">
+      <li><span>01</span><div><h3>Blossom Gardens</h3><p>Tu comienzo entre el verde · Rábanos y lechugas</p></div></li>
+      <li><span>02</span><div><h3>Sunlit Hills &amp; Woodland Valley</h3><p>Colinas soleadas y bosques · Girasoles, tomates y más</p></div></li>
+      <li><span>03</span><div><h3>Mountain Highlands &amp; Frost Valley</h3><p>En las alturas · Arándanos, arándanos rojos y col rizada de invierno</p></div></li>
+      <li><span>04</span><div><h3>Swampland &amp; Orchard Hills</h3><p>Agua y huertos · Arroz, taro, manzanas y peras</p></div></li>
+      <li><span>05</span><div><h3>Mystical Valley</h3><p>Un rincón misterioso · Moonflower y Glowroot</p></div></li>
+    </ol>
+  </section>
+  <section class="development" id="entwicklung"><div class="section"><span class="status"><span class="dot"></span> EN DESARROLLO</span><h2>Este valle también<br><em>necesita tiempo para crecer.</em></h2><p>Estamos trabajando en Greenhouse Valley. Aquí ya puedes echar un vistazo al mundo que está tomando forma. La información de lanzamiento y los enlaces de descarga llegarán cuando sea el momento.</p><span class="signature">Un juego de <b>Copperwing Games</b></span></div></section>
+  <section class="faq section" id="fragen"><div><p class="eyebrow">INFORMACIÓN ÚTIL</p><h2>¿Quieres saber más?</h2></div><div><details><summary>¿Qué es Greenhouse Valley?</summary><p>Un juego de invernaderos, plantas y exploración de un mundo conectado. Planta semillas, cuida tus cultivos y desbloquea nuevas regiones poco a poco.</p></details><details><summary>¿Ya puedo descargar el juego?</summary><p>Greenhouse Valley está en desarrollo. Todavía no hay una descarga pública ni una fecha de lanzamiento confirmada. Encontrarás la información aquí en cuanto esté disponible.</p></details><details><summary>¿Qué muestran las imágenes de esta página?</summary><p>La imagen de cabecera procede de la pantalla de carga del juego. Las tres imágenes de las regiones muestran el juego con su interfaz e invernaderos: la zona inicial, el molino y la esclusa. Todas son imágenes del desarrollo y pueden cambiar.</p></details><details><summary>¿Qué hay por descubrir?</summary><p>Jardines en flor, lagos, bosques, praderas, viñedos, huertos y mucho más. Las nuevas regiones traen nuevas plantas, más lugares para tus invernaderos y nuevas mecánicas de juego. Cada región que desbloquees ofrece nuevas posibilidades para explorar.</p></details></div></section>
+</main>
+<footer class="section"><a class="brand" href="#top"><img src="assets/leaf.svg" width="32" height="32" alt=""><span>Greenhouse <b>Valley</b></span></a><span>© 2026 Copperwing Games</span><a href="#top">Volver arriba ↑</a><nav class="legal-links" aria-label="Información legal y cuenta del juego"><a href="https://copperwinggames.com/impressum/#en">Aviso legal (inglés)</a><a href="https://copperwinggames.com/greenhouse-valley/privacy/#en">Privacidad (inglés)</a><a href="https://copperwinggames.com/greenhouse-valley/delete-account/#en">Eliminar cuenta (inglés)</a></nav></footer>
+<dialog id="lightbox" aria-label="Imagen del juego"><button class="close" aria-label="Cerrar imagen del juego">Cerrar ×</button><img alt=""><p>Imagen del juego · Juego en desarrollo</p></dialog>
+<script type="application/json" id="page-data">{"regions":{"starter":{"image":"assets/greenhouse-starter.webp","alt":"Zona inicial con granja e invernaderos cultivados","number":"01 / ZONA INICIAL","title":"Tu comienzo\nentre el verde.","description":"Tu vida en el valle comienza junto a la granja. Planta tus primeras semillas, cuida los bancales y recoge lo que crece en tus invernaderos.","crops":"Rábanos y lechugas","position":"center"},"mill":{"image":"assets/greenhouse-watermill.webp","alt":"Molino e invernadero de cobre Art Nouveau con plantas en distintas fases de crecimiento","number":"02 / EL MOLINO","title":"Donde el molino\nse alza junto al río.","description":"El molino de agua se encuentra entre verdes praderas y corrientes de agua. A su lado, las plantas crecen en un invernadero de cobre de estilo Art Nouveau: un nuevo lugar para tu próxima cosecha.","crops":"Tomates Black Cherry y melones","position":"center"},"sluice":{"image":"assets/greenhouse-sluice.webp","alt":"Esclusa de madera e invernadero Woodland Atelier con arroz y taro","number":"03 / LA ESCLUSA","title":"Nuevos caminos\njunto al agua.","description":"Puentes de madera, nenúfares y canales ramificados dan forma al paisaje que rodea la esclusa. Aquí crecen arroz y taro en el invernadero Woodland Atelier.","crops":"Arroz y taro","position":"center"}},"caption":"Imagen del juego · Juego en desarrollo"}</script>
+</body>
+</html>
